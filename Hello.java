@@ -14,6 +14,21 @@ class Hello {
         int num = 0b101;
 
         System.out.println(num);
+
+        // type conversion
+
+        byte bt = 126;
+        int a = 258;
+        byte k = (byte) a;
+
+        float fl = 5.6f;
+        int inf = (int) fl;
+
+        byte p = 10;
+        byte q = 20;
+
+        int res = p * q;
+        System.out.println(res);
  
     }
 }
