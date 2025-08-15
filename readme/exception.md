@@ -74,7 +74,7 @@ try {
 
 * **try** — contains critical/risky code.
 * **catch** — handles exceptions.
-* **finally** — executes regardless of whether an exception occurred (good for cleanup).
+* **finally** — executes regardless of whether an exception occurred (good for cleanup) - or if you are not handling any exception, use finally to cleanup. If you want to close the resource. br.close() - can be for file, inputs, connections ..etc
 * **throw** — used to explicitly throw an exception object.
 * **throws** — used in method declaration to indicate that the method may throw exceptions.
 
