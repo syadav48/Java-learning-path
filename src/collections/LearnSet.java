@@ -28,4 +28,7 @@ public class LearnSet {
         System.out.println(set2);
         System.out.println(set3);
     }
+
+    public static class LearnIntStream {
+    }
 }
