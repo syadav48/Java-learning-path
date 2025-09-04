@@ -1,9 +1,11 @@
 package stream;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StreamTermination {
     public static void main(String[] args) {
@@ -28,5 +30,26 @@ public class StreamTermination {
 
         //6 . findFirst, findAny
         System.out.println(list.stream().findAny().get());
+
+        // 7. toArray()
+        Object[] array = Stream.of(1, 2, 3).toArray();
+        System.out.println(Arrays.toString(array));
+
+        //8. min/max
+        System.out.println("max:" + Stream.of(2, 44, 69).max(Comparator.naturalOrder()));
+
+        // Counting occurences of a character
+        String sentences = "Hello World";
+        System.out.println(sentences.chars().filter(x -> x == 'l').count());
+
+        // Example
+        // Streams cannot be reused after a terminal operation has been called
+        Stream<Integer> stream = list.stream();
+        stream.forEach(System.out::println);
+//        List<String> list1 = stream.map(String::toUpperCase).toList(); // exception
+
+        // stateful and stateless component
+
+
     }
 }
