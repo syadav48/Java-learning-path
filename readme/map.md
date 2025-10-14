@@ -15,7 +15,7 @@ In Java, **`Map`** is an interface in the `java.util` package that represents a 
 
 * Keys cannot be duplicate (if you put the same key twice, the new value replaces the old one).
 * Values can be duplicate.
-* `Map` does **not** extend `Collection` because it behaves differently from a List or Set.
+* `Map` does **not** extend `Collection` because it behaves differently from a List or JavaCollectionTutorial.Set.
 
 ---
 
@@ -32,7 +32,7 @@ Here’s what the key methods do:
 | **Method**                    | **Description**                                                        | **Example**                            |
 | ----------------------------- | ---------------------------------------------------------------------- | -------------------------------------- |
 | `put(K key, V value)`         | Adds or replaces a value for a key.                                    | `students.put("Surya", 88)`            |
-| `keySet()`                    | Returns a `Set` of all keys.                                           | `students.keySet()`                    |
+| `keySet()`                    | Returns a `JavaCollectionTutorial.Set` of all keys.                                           | `students.keySet()`                    |
 | `get(Object key)`             | Returns the value associated with the key, or `null` if key not found. | `students.get("Viki")`                 |
 | `containsKey(Object key)`     | Checks if a key exists.                                                | `students.containsKey("Rahul")`        |
 | `containsValue(Object value)` | Checks if a value exists.                                              | `students.containsValue(88)`           |
@@ -40,7 +40,7 @@ Here’s what the key methods do:
 | `size()`                      | Returns number of entries.                                             | `students.size()`                      |
 | `isEmpty()`                   | Checks if map has no entries.                                          | `students.isEmpty()`                   |
 | `clear()`                     | Removes all entries.                                                   | `students.clear()`                     |
-| `entrySet()`                  | Returns a `Set` of key-value pairs (`Map.Entry`).                      | Loop through both keys & values easily |
+| `entrySet()`                  | Returns a `JavaCollectionTutorial.Set` of key-value pairs (`Map.Entry`).                      | Loop through both keys & values easily |
 
 ---
 

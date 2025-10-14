@@ -31,7 +31,7 @@ class Car implements Vehicle {
 
 **Real-World Importance:**
 
-* **Example:** `List`, `Set`, `Map` in Java Collections API are normal interfaces that provide a **blueprint** for various implementations like `ArrayList`, `HashSet`, `HashMap`.
+* **Example:** `List`, `JavaCollectionTutorial.Set`, `Map` in Java Collections API are normal interfaces that provide a **blueprint** for various implementations like `ArrayList`, `HashSet`, `HashMap`.
 * Promotes **loose coupling** and **flexibility** in application design.
 
 ---

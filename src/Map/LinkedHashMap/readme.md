@@ -38,9 +38,9 @@ So, in addition to hash-based storage, it maintains the insertion/access order s
 | Constructor                                                                 | Description                                                |
 | --------------------------------------------------------------------------- | ---------------------------------------------------------- |
 | `LinkedHashMap()`                                                           | Default capacity (16), load factor (0.75), insertion order |
-| `LinkedHashMap(int initialCapacity)`                                        | Set initial capacity                                       |
-| `LinkedHashMap(int initialCapacity, float loadFactor)`                      | Set both                                                   |
-| `LinkedHashMap(int initialCapacity, float loadFactor, boolean accessOrder)` | **Set access order (true)** for LRU-like behavior          |
+| `LinkedHashMap(int initialCapacity)`                                        | JavaCollectionTutorial.Set initial capacity                                       |
+| `LinkedHashMap(int initialCapacity, float loadFactor)`                      | JavaCollectionTutorial.Set both                                                   |
+| `LinkedHashMap(int initialCapacity, float loadFactor, boolean accessOrder)` | **JavaCollectionTutorial.Set access order (true)** for LRU-like behavior          |
 
 ---
 

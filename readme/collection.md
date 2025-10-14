@@ -5,7 +5,7 @@ Alright, let’s break this down clearly so you fully understand **Collection AP
 ## **1. Java Collection API**
 
 * **Definition:** A unified architecture for storing and manipulating groups of objects in Java.
-* **Purpose:** It provides a set of **interfaces** (like `List`, `Set`, `Queue`) and **classes** (like `ArrayList`, `HashSet`, `LinkedList`) to store, retrieve, manipulate, and communicate data efficiently.
+* **Purpose:** It provides a set of **interfaces** (like `List`, `JavaCollectionTutorial.Set`, `Queue`) and **classes** (like `ArrayList`, `HashSet`, `LinkedList`) to store, retrieve, manipulate, and communicate data efficiently.
 * **Why important?**
 
   * Saves development time — no need to write your own data structure logic.
@@ -20,7 +20,7 @@ Alright, let’s break this down clearly so you fully understand **Collection AP
 * **Type:** **Root interface** of the Collection framework.
 * **Purpose:** Represents a group of **objects** known as **elements**.
 * **Does not provide indexing** — you can't access elements by position directly.
-* **Common Implementations:** `List`, `Set`, `Queue` extend `Collection`.
+* **Common Implementations:** `List`, `JavaCollectionTutorial.Set`, `Queue` extend `Collection`.
 * **Key methods:**
 
   ```java

@@ -1,11 +1,11 @@
-Alright, let’s go step-by-step and break down **`Set`**, **`HashSet`**, **`TreeSet`**, and **`Iterator`**, along with their importance and methods.
+Alright, let’s go step-by-step and break down **`JavaCollectionTutorial.Set`**, **`HashSet`**, **`TreeSet`**, and **`Iterator`**, along with their importance and methods.
 
 ---
 
-## **1. `Set` Interface**
+## **1. `JavaCollectionTutorial.Set` Interface**
 
 * **Definition**:
-  `Set` is a **collection** that does **not allow duplicate elements**.
+  `JavaCollectionTutorial.Set` is a **collection** that does **not allow duplicate elements**.
   It is part of the **`java.util`** package and extends the `Collection` interface.
 * **Features**:
 
@@ -34,7 +34,7 @@ Alright, let’s go step-by-step and break down **`Set`**, **`HashSet`**, **`Tre
 ## **2. `HashSet`**
 
 * **Definition**:
-  Implements the `Set` interface using **hashing**.
+  Implements the `JavaCollectionTutorial.Set` interface using **hashing**.
 * **Features**:
 
   * No duplicates allowed.
@@ -44,7 +44,7 @@ Alright, let’s go step-by-step and break down **`Set`**, **`HashSet`**, **`Tre
 * **Example**:
 
   ```java
-  Set<String> set = new HashSet<>();
+  JavaCollectionTutorial.Set<String> set = new HashSet<>();
   set.add("Apple");
   set.add("Banana");
   set.add("Apple"); // Duplicate, ignored
@@ -58,7 +58,7 @@ Alright, let’s go step-by-step and break down **`Set`**, **`HashSet`**, **`Tre
 ## **3. `TreeSet`**
 
 * **Definition**:
-  Implements the `Set` interface using a **Red-Black Tree** (self-balancing BST).
+  Implements the `JavaCollectionTutorial.Set` interface using a **Red-Black Tree** (self-balancing BST).
 * **Features**:
 
   * Stores elements in **sorted order** (natural ordering or custom `Comparator`).
@@ -67,7 +67,7 @@ Alright, let’s go step-by-step and break down **`Set`**, **`HashSet`**, **`Tre
 * **Example**:
 
   ```java
-  Set<Integer> set = new TreeSet<>();
+  JavaCollectionTutorial.Set<Integer> set = new TreeSet<>();
   set.add(10);
   set.add(5);
   set.add(20);
@@ -84,7 +84,7 @@ Alright, let’s go step-by-step and break down **`Set`**, **`HashSet`**, **`Tre
   `Iterator` is used to **traverse** (iterate) elements in a collection **one by one**.
 * **Why use `Iterator`?**
 
-  * Works with any `Collection` type (Set, List, etc.).
+  * Works with any `Collection` type (JavaCollectionTutorial.Set, List, etc.).
   * Allows **safe removal** of elements while iterating.
 * **Methods**:
 
@@ -107,7 +107,7 @@ Alright, let’s go step-by-step and break down **`Set`**, **`HashSet`**, **`Tre
 ## **Your Example Code Flow**
 
 ```java
-Set<Integer> nums = new HashSet<>();
+JavaCollectionTutorial.Set<Integer> nums = new HashSet<>();
 nums.add(5);
 nums.add(6);
 nums.add(7);

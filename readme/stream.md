@@ -74,7 +74,7 @@ A **Stream pipeline** = **Source** → **Intermediate operations** → **Termina
 
    * `forEach(Consumer)` → process each element.
    * `reduce(identity, accumulator)` → reduce to single value.
-   * `collect(Collector)` → collect into `List`, `Set`, `Map`.
+   * `collect(Collector)` → collect into `List`, `JavaCollectionTutorial.Set`, `Map`.
    * `count()` → count elements.
    * `min()` / `max()`.
    * `toArray()`.
@@ -180,7 +180,7 @@ int result = nums.stream()
 # 🔹 Quick Visual Flow
 
 ```
-Source (List, Array, Set, File)
+Source (List, Array, JavaCollectionTutorial.Set, File)
          |
      Stream()
          |

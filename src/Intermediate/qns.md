@@ -49,7 +49,7 @@ This roadmap contains **80 intermediate-level Java practice problems** across **
 
 1. Find the second largest element in an `ArrayList<Integer>`.
 2. Use a `HashMap` to count word occurrences in a paragraph.
-3. Remove duplicates from a `List` without using a `Set`.
+3. Remove duplicates from a `List` without using a `JavaCollectionTutorial.Set`.
 4. Sort a list of `Student` objects by marks (create Student class with `name`, `marks`).
 5. Implement a custom `Stack` class using `LinkedList`.
 6. Find the intersection of two `ArrayList<Integer>`.
@@ -111,7 +111,7 @@ This roadmap contains **80 intermediate-level Java practice problems** across **
 10. Build a small event system where multiple `Consumer<String>` objects act as listeners.
 
 **Collectors:**
-11\. Collect even numbers from a list into a `Set` using `Collectors.toSet()`.
+11\. Collect even numbers from a list into a `JavaCollectionTutorial.Set` using `Collectors.toSet()`.
 12\. Join a list of names into a single string separated by commas using `Collectors.joining()`.
 13\. Count how many strings in a list have length > 5 using `Collectors.counting()`.
 14\. Find the average salary of employees using `Collectors.averagingInt()`.

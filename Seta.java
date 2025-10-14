@@ -6,7 +6,7 @@ import java.util.Set;
 public class Seta {
     public static void main(String[] args) {
         Set<Integer> nums = new HashSet<Integer>();
-        // Set<Integer> nums = new TreeSet<Integer>(); // useful for sorted list
+        // JavaCollectionTutorial.Set<Integer> nums = new TreeSet<Integer>(); // useful for sorted list
         nums.add(5);
         nums.add(6);
         nums.add(7);

@@ -17,7 +17,7 @@ public class LearnCollectors {
                 .collect(Collectors.toList());
         System.out.println(res);
 
-        // 2. Collecting to a Set
+        // 2. Collecting to a JavaCollectionTutorial.Set
         List<Integer> nums = Arrays.asList(1, 2, 2, 3, 4, 4, 5);
         Set<Integer> set = nums.stream().collect(Collectors.toSet());
         System.out.println(set);

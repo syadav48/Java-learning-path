@@ -100,7 +100,7 @@ public class ListExample {
 
 # 🔹 **4. Collections (Utility Class in `java.util`)**
 
-The `Collections` class provides **static methods** to work with **Collections** like List, Set, Map.
+The `Collections` class provides **static methods** to work with **Collections** like List, JavaCollectionTutorial.Set, Map.
 
 ### ✅ Example
 
