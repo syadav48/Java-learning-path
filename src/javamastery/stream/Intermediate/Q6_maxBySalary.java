@@ -16,6 +16,14 @@ public class Q6_maxBySalary {
         System.out.println(list.stream().max(Comparator.comparing(x -> x.salary)).map(x -> x.getSalary()));
         return max2;
     }
+    public static String getMostSalaried(List<Employee> list) {
+        return list.stream()
+                .collect(Collectors.collectingAndThen(
+                        Collectors.maxBy(Comparator.comparingDouble(Employee::getSalary)),
+                        emp -> emp.map(Employee::getName).orElse("No Employees")
+                ));
+    }
+
     public static void main(String[] args) {
         Employee e1 = new Employee("Suresh", 50000);
         Employee e2 = new Employee("Mahesh", 60000);
@@ -24,6 +32,7 @@ public class Q6_maxBySalary {
         Employee e5 = new Employee("Rajesh", 90000);
         List<Employee> list = Arrays.asList(e1, e2, e3, e4, e5);
         System.out.println(getMaxSalary(list));
+        System.out.println(getMostSalaried(list));
     }
 
 }
