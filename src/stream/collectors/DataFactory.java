@@ -10,7 +10,7 @@ public class DataFactory {
                 new Employee("Ramesh", "HR", 55000, 42, "Mumbai", true),
                 new Employee("Mahesh", "Finance", 72000, 38, "Pune", false),
                 new Employee("Rajesh", "IT", 95000, 28, "Delhi", true),
-                new Employee("Lokesh", "Finance", 88000, 35, "Bangalore", true),
+                new Employee("Lokesh", "Finance", 78000, 35, "Bangalore", true),
                 new Employee("Dinesh", "HR", 60000, 45, "Chennai", false),
                 new Employee("Naresh", "IT", 99000, 33, "Bangalore", true),
                 new Employee("Kiran", "Finance", 67000, 31, "Pune", true),
