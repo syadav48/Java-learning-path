@@ -7,27 +7,27 @@ each aligned with **industry-level interviews** (TCS, Infosys, Product companies
 ## 🧠 Java Multithreading & Concurrency — Interview Practice Set
 
 | Level     | #  | Question                                                                 | Sample Input / Scenario | Key Methods / Concepts to Use    |
-| --------- | -- | ------------------------------------------------------------------------ | ----------------------- | -------------------------------- |
-| **Basic** | 1  | Create a thread that prints “Hello from thread” five times.              | —                       | `Thread`, `run()`, `start()`     |
-|           | 2  | Create two threads printing numbers 1–5 and A–E simultaneously.          | —                       | `Thread`, `Runnable`             |
-|           | 3  | Demonstrate thread creation using `Runnable` vs extending `Thread`.      | —                       | `Thread`, `Runnable`             |
-|           | 4  | Set thread name and priority for multiple threads.                       | —                       | `setName()`, `setPriority()`     |
-|           | 5  | Write a program to show `sleep()` and `join()` behavior.                 | —                       | `Thread.sleep()`, `join()`       |
-|           | 6  | Create a thread that stops when interrupted.                             | —                       | `interrupt()`, `isInterrupted()` |
-|           | 7  | Demonstrate `yield()` and observe scheduling difference.                 | —                       | `Thread.yield()`                 |
-|           | 8  | Show `setDaemon(true)` effect — background thread cleanup.               | —                       | `setDaemon()`                    |
-|           | 9  | Explain thread lifecycle using print logs (New → Runnable → Terminated). | —                       | `start()`, `run()`, `sleep()`    |
-|           | 10 | Synchronize a counter incremented by two threads.                        | `counter=0`             | `synchronized`, critical section |
-|           | 11 | Print table of 2 using thread synchronization.                           | `2 x 1..10`             | `synchronized` method            |
-|           | 12 | Create and manage a thread pool using `ExecutorService`.                 | —                       | `Executors.newFixedThreadPool()` |
-|           | 13 | Demonstrate difference between `run()` and `start()`.                    | —                       | `Thread.start()`                 |
-|           | 14 | Simulate a race condition without synchronization.                       | Shared variable = 0     | `Thread`, `Runnable`             |
-|           | 15 | Create multiple worker threads executing same Runnable task.             | —                       | `ExecutorService.submit()`       |
-|           | 16 | Stop thread gracefully after N iterations.                               | N = 5                   | `volatile`, `isInterrupted()`    |
-|           | 17 | Write program to count total active threads.                             | —                       | `Thread.activeCount()`           |
-|           | 18 | Show dead thread cannot be restarted.                                    | —                       | `IllegalThreadStateException`    |
-|           | 19 | Demonstrate `Thread.currentThread().getName()`.                          | —                       | `Thread.currentThread()`         |
-|           | 20 | Explain `sleep()` vs `wait()`.                                           | —                       | `sleep`, `wait`, synchronized    |
+| --------- | -- | ------------------------------------------------------------------------ |--------------------| -------------------------------- |
+| **Basic** | 1  | Create a thread that prints “Hello from thread” five times.              | — PrintMessage     | `Thread`, `run()`, `start()`     |
+|           | 2  | Create two threads printing numbers 1–5 and A–E simultaneously.          | — PrintMessage     | `Thread`, `Runnable`             |
+|           | 3  | Demonstrate thread creation using `Runnable` vs extending `Thread`.      | — PrintMessage     | `Thread`, `Runnable`             |
+|           | 4  | Set thread name and priority for multiple threads.                       | —  Q1_Thread       | `setName()`, `setPriority()`     |
+|           | 5  | Write a program to show `sleep()` and `join()` behavior.                 | —  Q1_Thread       | `Thread.sleep()`, `join()`       |
+|           | 6  | Create a thread that stops when interrupted.                             | —  Q2_Thread       | `interrupt()`, `isInterrupted()` |
+|           | 7  | Demonstrate `yield()` and observe scheduling difference.                 | —                  | `Thread.yield()`                 |
+|           | 8  | Show `setDaemon(true)` effect — background thread cleanup.               | —                  | `setDaemon()`                    |
+|           | 9  | Explain thread lifecycle using print logs (New → Runnable → Terminated). | —                  | `start()`, `run()`, `sleep()`    |
+|           | 10 | Synchronize a counter incremented by two threads.                        | `counter=0`        | `synchronized`, critical section |
+|           | 11 | Print table of 2 using thread synchronization.                           | `2 x 1..10`        | `synchronized` method            |
+|           | 12 | Create and manage a thread pool using `ExecutorService`.                 | —                  | `Executors.newFixedThreadPool()` |
+|           | 13 | Demonstrate difference between `run()` and `start()`.                    | —                  | `Thread.start()`                 |
+|           | 14 | Simulate a race condition without synchronization.                       | Shared variable = 0 | `Thread`, `Runnable`             |
+|           | 15 | Create multiple worker threads executing same Runnable task.             | —                  | `ExecutorService.submit()`       |
+|           | 16 | Stop thread gracefully after N iterations.                               | N = 5              | `volatile`, `isInterrupted()`    |
+|           | 17 | Write program to count total active threads.                             | —                  | `Thread.activeCount()`           |
+|           | 18 | Show dead thread cannot be restarted.                                    | —                  | `IllegalThreadStateException`    |
+|           | 19 | Demonstrate `Thread.currentThread().getName()`.                          | —                  | `Thread.currentThread()`         |
+|           | 20 | Explain `sleep()` vs `wait()`.                                           | —                  | `sleep`, `wait`, synchronized    |
 
 ---
 
