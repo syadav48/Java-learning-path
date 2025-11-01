@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class LargestNumber {
-    public static int dominantIndex(int[] nums) {
+    public int dominantIndex(int[] nums) {
         int largest = Arrays.stream(nums).max().getAsInt();
         List<Integer> list = Arrays.stream(nums).boxed().sorted(Comparator.reverseOrder()).toList();
         int secondLargest = list.get(1);
@@ -24,9 +24,10 @@ public class LargestNumber {
         int[] nums1 = {3,6,1,0};
         int[] nums2 = {1,2,3,4};
         int[] nums3 = {1,2,3,4,5,6,12};
-        System.out.println(dominantIndex(nums1));
-        System.out.println(dominantIndex(nums2));
-        System.out.println(dominantIndex(nums3));
+        LargestNumber largestNumber = new LargestNumber();
+        System.out.println(largestNumber.dominantIndex(nums1));
+        System.out.println(largestNumber.dominantIndex(nums2));
+        System.out.println(largestNumber.dominantIndex(nums3));
 
     }
 }
