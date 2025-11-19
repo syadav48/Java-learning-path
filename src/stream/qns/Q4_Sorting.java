@@ -22,9 +22,16 @@ public class Q4_Sorting {
         System.out.println(Arrays.toString(nums));
 
         //3 - incomplete
-         List<String> list2 = DataFactory.employees().stream().sorted(Comparator.comparing(x -> x.getSalary()))
-                .map(x -> x.getName()).toList();
+         List<String> list2 = DataFactory.employees().stream().sorted(
+                 Comparator.comparing(Employee ::getSalary).thenComparing(Employee :: getName)
+         ).map(x -> x.getName()).toList();
         System.out.println(list2);
+
+        //4
+         List<String> transactions = DataFactory.transactions().stream().sorted(Comparator.comparing(x -> x.getDate()))
+                 .map(x -> x.getTxnId())
+                 .toList();
+        System.out.println(transactions);
 
     }
 }

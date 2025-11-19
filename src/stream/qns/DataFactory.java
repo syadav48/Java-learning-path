@@ -69,13 +69,14 @@ public class DataFactory {
     }
 
     public static int[] numberArray() {
-        return new int[]{1, 2, 3, 4, 5, 6};
+        return new int[]{1, 3, 4, 5, 6, -7, -11};
     }
 
     // --- Strings -------------------------------------------------------------
     public static List<String> sentences() {
         return List.of(
                 "Java stream API is powerful",
+                "Streams improve readability and Java is Powerful",
                 "Streams improve readability"
         );
     }

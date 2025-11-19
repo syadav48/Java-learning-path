@@ -379,15 +379,3 @@ Output:
 ---
 
 ---
-
-# 🎯 WANT THIS AS A FULL WORKSHEET PDF?
-
-I can generate a **clean, print-ready worksheet PDF** with:
-
-✔ All questions
-✔ Structured sections
-✔ Space for answers
-✔ Optional answer key
-
-Just say: **“Yes, generate PDF worksheet”**
-and I’ll create it.
