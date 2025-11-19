@@ -69,7 +69,7 @@ public class DataFactory {
     }
 
     public static int[] numberArray() {
-        return new int[]{1, 3, 4, 5, 6, -7, -11};
+        return new int[]{1, 3, 4, 5, 6, -7, -11, 6, 4};
     }
 
     // --- Strings -------------------------------------------------------------
