@@ -1,8 +1,7 @@
-package JavaCollectionTutorial.qns;
+package JavaCollectionTutorial.qns.List;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class Q9_SingleList {
     public static void main(String[] args) {

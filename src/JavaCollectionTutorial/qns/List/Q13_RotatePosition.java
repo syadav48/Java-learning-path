@@ -1,4 +1,4 @@
-package JavaCollectionTutorial.qns;
+package JavaCollectionTutorial.qns.List;
 
 import stream.qns.DataFactory;
 

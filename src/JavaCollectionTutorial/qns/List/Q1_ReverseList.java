@@ -1,4 +1,4 @@
-package JavaCollectionTutorial.qns;
+package JavaCollectionTutorial.qns.List;
 
 import java.util.*;
 import java.util.stream.IntStream;
