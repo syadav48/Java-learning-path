@@ -18,7 +18,8 @@ public class DataFactory {
                 new Employee(5, "John", 37, 95000, "Sales", "Delhi", List.of("Negotiation", "CRM")),
                 new Employee(6, "Mary", 29, 55000, "Finance", "Chennai", List.of("Tally", "Analytics")),
                 new Employee(7, "Kunal", 50, 150000, "IT", "Pune", List.of("Cloud", "Kubernetes", "Java")),
-                new Employee(8, "Sara", 27, 60000, "Marketing", "Bangalore", List.of("SEO", "Content"))
+                new Employee(8, "Sara", 27, 60000, "Marketing", "Bangalore", List.of("SEO", "Content")),
+                new Employee(8, "Rahul", 29, 60000, "Marketing", "Bangalore", List.of("SEO", "Content"))
         );
     }
 

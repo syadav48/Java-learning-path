@@ -1,4 +1,4 @@
-package JavaCollectionTutorial.List;
+package JavaCollectionTutorial.qns;
 
 
 import java.util.ArrayList;
