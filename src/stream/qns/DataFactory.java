@@ -91,6 +91,9 @@ public class DataFactory {
                 Optional.empty()
         );
     }
+    public static String paragraph(){
+        return "Java is fun and Java is powerful. Many developers use Java every day because Java makes coding simple and simple code is easy to read. When code is simple, developers can focus on logic, and when logic is clear, the application becomes easy to maintain.";
+    }
 
     // --- Nested map used in real projects -----------------------------------
     public static Map<String, List<String>> roleToUsers() {
