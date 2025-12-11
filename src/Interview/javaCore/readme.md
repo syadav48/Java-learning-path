@@ -970,5 +970,168 @@ If you want, I can give:
 ✔ More trick interview questions on this topic
 ✔ A short 2–3 line explanation you can memorize for interviews
 
+Static + inheritance is one of the most confusing topics in Java.
+Here is a **clear, simple, interview-friendly explanation with perfect examples.**
+
+---
+
+# 🚨 **First Rule (Very Important)**
+
+### **Static methods are NOT truly inherited. They are NOT overridden.
+
+They are *hidden* (method hiding).**
+
+This means:
+
+* Method call is based on **reference type**, NOT object type
+* Dynamic polymorphism does **NOT** apply
+* You cannot override static methods like instance methods
+
+---
+
+# 🟦 **Example 1 — Static Method Hiding**
+
+```java
+class Parent {
+    static void show() {
+        System.out.println("Parent static show()");
+    }
+}
+
+class Child extends Parent {
+    static void show() {
+        System.out.println("Child static show()");
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Parent p = new Parent();
+        Parent pc = new Child();
+        Child c = new Child();
+
+        p.show();     // Parent static show()
+        pc.show();    // Parent static show()  (NOT Child!!)
+        c.show();     // Child static show()
+    }
+}
+```
+
+---
+
+# 🟩 **Why does this happen?**
+
+Because static methods are resolved at **compile time**, not runtime.
+
+### ✔ `Parent pc = new Child();`
+
+The compiler looks at **reference type** (Parent) → calls `Parent.show()`
+NOT based on actual object.
+
+### 🧠 Static = no runtime polymorphism
+
+Instance method overriding → runtime
+Static method hiding → compile time
+
+---
+
+# 🟥 **Example 2 — Static Fields Are Also Hidden**
+
+```java
+class Parent {
+    static int x = 10;
+}
+
+class Child extends Parent {
+    static int x = 20;
+}
+
+public class Test {
+    public static void main(String[] args) {
+        System.out.println(Parent.x);     // 10
+        System.out.println(Child.x);      // 20
+
+        Parent ref = new Child();
+        System.out.println(ref.x);        // 10  (Parent's x)
+    }
+}
+```
+
+✔ Again, resolved at **compile time** using reference type.
+
+---
+
+# 🟧 **Example 3 — Static Method Cannot Be Overridden**
+
+```java
+class A {
+    static void display() { }
+}
+
+class B extends A {
+    static void display() { }   // ✔ allowed but not overriding
+}
+```
+
+This is NOT overriding → it is **method hiding**.
+
+---
+
+# 🟨 **Example 4 — Instance Method vs Static Method**
+
+```java
+class Parent {
+    void print() { System.out.println("Parent instance"); }
+    static void show() { System.out.println("Parent static"); }
+}
+
+class Child extends Parent {
+    void print() { System.out.println("Child instance"); }
+    static void show() { System.out.println("Child static"); }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Parent obj = new Child();
+        obj.print();  // Child instance (runtime polymorphism)
+        obj.show();   // Parent static (compile-time binding)
+    }
+}
+```
+
+✔ Instance method → overridden → runtime behavior
+✔ Static method → hidden → compile-time behavior
+
+---
+
+# 🎯 **Summary Table**
+
+| Feature          | Instance Method | Static Method        |
+| ---------------- | --------------- | -------------------- |
+| Overridden?      | ✔ Yes           | ❌ No (hidden only)   |
+| Resolved at      | Runtime         | Compile time         |
+| Uses which type? | Object type     | Reference type       |
+| Polymorphism?    | ✔ Supported     | ❌ Not supported      |
+| Called via       | `obj.method()`  | `ClassName.method()` |
+
+---
+
+# ⭐ Final Interview Answer
+
+> Static methods do NOT participate in runtime polymorphism.
+> When a subclass defines a static method with the same signature, it hides the parent’s static method.
+> Method resolution happens at **compile time** based on the **reference type**, not the object type.
+
+---
+
+If you want, I can also give you:
+
+✔ A visual diagram of static method resolution
+✔ A tricky MCQ set on static + inheritance
+✔ An explanation of when to use static vs instance methods
+
+Just tell me!
+
+
 
 
