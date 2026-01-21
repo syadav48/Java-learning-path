@@ -66,7 +66,7 @@ public class DataFactory {
 
     // --- Numbers -------------------------------------------------------------
     public static List<Integer> numbers() {
-        return List.of(1, 5, 2, 5, 9, 12, 3, 3, 8, 20);
+        return List.of(1, 5, 2, 5, 9, 12, 3, 3, 8, 20, 144);
     }
 
     public static int[] numberArray() {
