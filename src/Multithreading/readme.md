@@ -1,4 +1,5 @@
-Perfect 👌 — this is the *right way* to understand **Threading in Java** — not just from syntax, but from **computer architecture → OS concepts → Java implementation**.
+https://dev.to/krishna7852/50-interview-questions-on-multithreading-with-answers-2f8n
+
 
 Let’s go step-by-step from **hardware → OS → process → thread → Java**, with diagrams and examples.
 
