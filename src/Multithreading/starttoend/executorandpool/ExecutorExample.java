@@ -21,6 +21,13 @@ public class ExecutorExample {
         System.out.println("Shutting down the executor");
         executorService.shutdown();
 
+        try {
+            System.out.println("checking try and finally");
+            int result = 10/1;
+        } finally {
+            System.out.println("finally i am here");
+        }
+
 
     }
 }
