@@ -997,6 +997,57 @@ For `k = 3`:
 3 → 2 → 1 → 6 → 5 → 4
 ```
 
+Reverse K Group
+│
+├── Find K nodes
+│
+├── Reverse those K nodes
+│
+└── Connect the reversed group to the next group
+
+public ListNode reverseKGroup(ListNode head, int k) {
+
+    ListNode dummy = new ListNode(0);
+    dummy.next = head;
+
+    ListNode groupPrev = dummy;
+
+    while (true) {
+
+        // 1. Find kth node
+        ListNode kth = groupPrev;
+
+        for (int i = 0; i < k; i++) {
+            kth = kth.next;
+
+            if (kth == null) {
+                return dummy.next;
+            }
+        }
+
+        // 2. Save next group
+        ListNode groupNext = kth.next;
+
+        // 3. Reverse current group
+        ListNode prev = groupNext;
+        ListNode curr = groupPrev.next;
+
+        while (curr != groupNext) {
+
+            ListNode next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        // 4. Connect previous group
+        ListNode groupStart = groupPrev.next;
+        groupPrev.next = kth;
+
+        // 5. Move to next group
+        groupPrev = groupStart;
+    }
+}
 This is a more advanced pointer-manipulation problem.
 
 ---
