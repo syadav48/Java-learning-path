@@ -100,6 +100,18 @@ public class BuildGraph {
         }
         return false;
     }
+    public int[] calIndegree(int n, int[][] edges){
+        int[] indegree = new int[n];
+        Map<Integer, List<Integer>> adjList = new HashMap<>();
+        for(int[] edge: edges){
+            int u = edge[0];
+            int v = edge[1];
+            adjList.computeIfAbsent(u, k -> new ArrayList<>()).add(v);
+            indegree[v]++;
+        }
+        System.out.println(adjList);
+        return indegree;
+    }
 
     public static void main(String[] args) {
         BuildGraph buildGraph = new BuildGraph();
@@ -110,7 +122,7 @@ public class BuildGraph {
                 {2, 3},
                 {3, 0}
         };
-
+        System.out.println(Arrays.toString(buildGraph.calIndegree(n, edges)));
         List<List<Integer>> graph = buildGraph.buildGraph(n, edges);
         System.out.println("Adjacency List: " + graph);
 
