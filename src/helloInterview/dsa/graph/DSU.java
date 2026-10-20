@@ -4,7 +4,7 @@ public class DSU {
     int[] parent;
     int[] size;
 
-    DSU(int n){
+    public DSU(int n){
         parent = new int[n];
         size = new int[n];
 
@@ -17,14 +17,14 @@ public class DSU {
 
 
 
-    int find(int x){
+   public int find(int x){
         if(parent[x] != x){
             parent[x] = find(parent[x]);
         }
         return parent[x];
     }
 
-    boolean union(int a, int b){
+   public boolean union(int a, int b){
         int rootA = find(a);
         int rootB = find(b);
 
