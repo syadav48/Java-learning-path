@@ -1,4 +1,4 @@
-package helloInterview.dsa.graph.notes;
+package helloInterview.dsa.graph.basicAlgo;
 
 import helloInterview.dsa.graph.DSU;
 
